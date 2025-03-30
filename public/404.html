@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Страница не найдена</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(36,47,69);
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
+        }
+        p {
+            font-size: 18px;
+            color: rgb(192, 192, 192);
+            margin-bottom: 20px;
+        }
+        .button {
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <img src="/images/404.gif" alt="404 Error">
+    <h1>Упс. Произошла ошибка!</h1>
+    <p>Похоже, такой страницы нет.</p>
+    <a href="/" class="button">На главную</a>
+</body>
+</html>
