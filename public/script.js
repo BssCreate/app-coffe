@@ -23,7 +23,7 @@ function updateTime() {
     const dateTimeStr = `${nowNovosibirsk.toLocaleDateString("ru-RU", options)} | ${nowNovosibirsk.toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" })}`;
     document.getElementById("date-time").textContent = dateTimeStr;
 
-    fetch("/api/times")
+    fetch("https://app-coffe-hunt.vercel.app/api/times") // Если нужен полный путь
     .then(response => response.json())
     .then(schedule => {
         let today = nowNovosibirsk.toLocaleDateString("ru-RU", { weekday: "long" });
